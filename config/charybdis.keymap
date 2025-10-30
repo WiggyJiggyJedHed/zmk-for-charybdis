@@ -11,15 +11,26 @@
 };
 
 / {
+    behaviors {
+        quick_mouse: quick_mouse {
+            compatible = "zmk,behavior-hold-tap";
+            label = "QUICK_MOUSE";
+            bindings = <&mkp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         layer_0 {
             bindings = <
-&kp GRAVE  &kp N1  &kp N2  &kp N3        &kp N4          &kp N5       &kp N6     &kp N7         &kp N8     &kp N9      &kp N0    &kp MINUS
-&kp TAB    &kp Q   &kp W   &kp E         &kp R           &kp T        &kp Y      &kp U          &kp I      &kp O       &kp P     &kp BSLH
-&kp ESC    &kp A   &kp S   &kp D         &kp F           &kp G        &kp H      &kp J          &kp K      &kp L       &kp SEMI  &kp SQT
-&kp LCTRL  &kp Z   &kp X   &kp C         &kp V           &kp B        &kp N      &kp M          &kp COMMA  &kp PERIOD  &kp FSLH  &kp LEFT_ALT
+&kp GRAVE  &kp N1  &kp N2  &kp N3        &kp N4          &kp N5       &kp N6     &kp N7              &kp N8                  &kp N9                   &kp N0    &kp MINUS
+&kp TAB    &kp Q   &kp W   &kp E         &kp R           &kp T        &kp Y      &kp U               &kp I                   &kp O                    &kp P     &kp BSLH
+&kp ESC    &kp A   &kp S   &kp D         &kp F           &kp G        &kp H      &kp J               &kp K                   &kp L                    &kp SEMI  &kp SQT
+&kp LCTRL  &kp Z   &kp X   &kp C         &kp V           &kp B        &kp N      &quick_mouse MB1 M  &quick_mouse MB2 COMMA  &quick_mouse MB3 PERIOD  &kp FSLH  &kp LEFT_ALT
                            &kp LEFT_WIN  &kp DEL         &mo 1        &mo 1      &kp BACKSPACE
                                          &kp LEFT_SHIFT  &kp SPACE    &kp ENTER
             >;
@@ -30,8 +41,8 @@
         layer_1 {
             bindings = <
 &kp F1          &kp F2  &kp F3    &kp F4        &kp F5      &kp F6        &kp F7          &kp F8          &kp F9        &kp F10            &kp F11           &kp F12
-&kp CAPS        &none   &none     &none         &bt BT_CLR  &bt BT_NXT    &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT    &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&kp LEFT_SHIFT  &none   &mkp MB3  &mkp MB2      &mkp MB1    &none         &kp LEFT        &kp DOWN        &kp UP_ARROW  &kp RIGHT          &none             &none
+&kp CAPS        &none   &none     &none         &bt BT_CLR  &bt BT_NXT    &none           &none           &none         &none              &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&kp LEFT_SHIFT  &none   &mkp MB3  &mkp MB2      &mkp MB1    &none         &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT          &none             &none
 &kp LCTRL       &none   &none     &none         &none       &none         &none           &none           &kp PERIOD    &kp RIGHT_BRACKET  &none             &kp EQUAL
                                   &kp LEFT_WIN  &kp SPACE   &none         &none           &kp DELETE
                                                 &mkp MB1    &mo 2         &mo 2
