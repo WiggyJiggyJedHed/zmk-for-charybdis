@@ -7,5 +7,8 @@ manifest:
       remote: zmkfirmware
       revision: feature-test
       import: app/west.yml
+    - name: zmk-feature-default-layer
+      remote: cormoran
+      revision: main
   self:
     path: config
