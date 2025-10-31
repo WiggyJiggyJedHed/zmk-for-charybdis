@@ -2,6 +2,8 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/DoctorWangWang
+    - name: cormoran
+      url-base: https://github.com/cormoran
   projects:
     - name: zmk
       remote: zmkfirmware
