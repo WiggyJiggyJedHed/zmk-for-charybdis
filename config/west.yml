@@ -2,10 +2,15 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/DoctorWangWang
+    - name: cormoran
+      url-base: https://github.com/cormoran
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: feature-test
       import: app/west.yml
+    - name: zmk-feature-default-layer
+      remote: cormoran
+      revision: main
   self:
     path: config
