@@ -54,12 +54,12 @@
 
         layer_2 {
             bindings = <
-&kp SCROLLLOCK  &kp K_MUTE         &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &none          &none    &kp SYSREQ       &none            &kp KP_SLASH     &kp KP_ASTERISK  &kp KP_MINUS  &none
-&none           &none              &kp INSERT         &kp HOME         &kp PAGE_UP    &none    &none            &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS   &none
-&none           &none              &kp DEL            &kp END          &kp PAGE_DOWN  &none    &none            &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_ENTER  &none
-&none           &kp K_APPLICATION  &none              &none            &kp TAB        &none    &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT    &none
-                                                      &kp LEFT_GUI     &trans         &none    &none            &kp BACKSPACE
-                                                                       &none          &none    &kp SPACE
+&kp SCROLLLOCK  &kp K_MUTE         &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &none          &kp PRINTSCREEN    &kp SYSREQ       &none            &kp KP_SLASH     &kp KP_ASTERISK  &kp KP_MINUS  &none
+&none           &none              &kp INSERT         &kp HOME         &kp PAGE_UP    &none              &none            &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS   &none
+&none           &none              &kp DEL            &kp END          &kp PAGE_DOWN  &none              &none            &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_ENTER  &none
+&none           &kp K_APPLICATION  &none              &none            &kp TAB        &none              &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT    &none
+                                                      &kp LEFT_GUI     &trans         &none              &none            &kp BACKSPACE
+                                                                       &none          &none              &kp SPACE
             >;
         };
 
