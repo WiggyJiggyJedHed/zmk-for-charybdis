@@ -43,10 +43,10 @@
             bindings = <
 &kp F1          &kp F2  &kp F3    &kp F4        &kp F5      &kp F6        &kp F7          &kp F8            &kp F9          &kp F10          &kp F11            &kp F12
 &kp CAPS        &none   &none     &none         &bt BT_CLR  &bt BT_NXT    &none           &none             &none           &none            &kp LEFT_BRACKET   &kp RIGHT_BRACKET
-&kp LEFT_SHIFT  &none   &mkp MB3  &mkp MB2      &mkp MB1    &none         &kp LEFT_ARROW  &kp DOWN_ARROW    &kp UP_ARROW    &kp RIGHT        &none              &kp PLUS
+&kp LEFT_SHIFT  &none   &mkp MB3  &mkp MB2      &mkp MB1    &none         &kp LEFT_ARROW  &kp DOWN_ARROW    &kp UP_ARROW    &kp RIGHT        &kp EQUAL          &kp PLUS
 &kp LCTRL       &none   &none     &none         &none       &none         &none           &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp EQUAL
-                                  &kp LEFT_WIN  &kp SPACE   &none         &none           &kp DELETE
-                                                &mkp MB1    &mo 2         &trans
+                                  &kp LEFT_WIN  &trans      &none         &none           &trans
+                                                &kp SPACE   &mo 2         &trans
             >;
 
             trackball-bindings = <&tsl>;
@@ -54,12 +54,12 @@
 
         layer_2 {
             bindings = <
-&mo 2  &kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &none          &none    &kp SYSREQ       &none            &kp KP_SLASH     &kp KP_ASTERISK  &kp KP_MINUS  &none
-&none  &none       &kp INSERT         &kp HOME         &kp PAGE_UP    &none    &none            &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS   &none
-&none  &none       &kp DEL            &kp END          &kp PAGE_DOWN  &none    &none            &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_ENTER  &none
-&none  &none       &none              &none            &none          &none    &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT    &none
-                                      &kp LEFT_GUI     &none          &none    &none            &kp K_MENU
-                                                       &none          &none    &none
+&kp SCROLLLOCK  &kp K_MUTE         &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &none          &none    &kp SYSREQ       &none            &kp KP_SLASH     &kp KP_ASTERISK  &kp KP_MINUS  &none
+&none           &none              &kp INSERT         &kp HOME         &kp PAGE_UP    &none    &none            &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS   &none
+&none           &none              &kp DEL            &kp END          &kp PAGE_DOWN  &none    &none            &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_ENTER  &none
+&none           &kp K_APPLICATION  &none              &none            &kp TAB        &none    &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT    &none
+                                                      &kp LEFT_GUI     &trans         &none    &none            &kp BACKSPACE
+                                                                       &none          &none    &kp SPACE
             >;
         };
 
