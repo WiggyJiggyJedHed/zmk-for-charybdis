@@ -47,7 +47,7 @@
 	status = "disabled";
 
 	trackball: trackball@0 {
-		compatible = "pixart,pmw3610";
+		compatible = "pixart,pmw3610-alt";
 		status = "disabled";
 		reg = <0>;
 		label = "TRACKBALL";
